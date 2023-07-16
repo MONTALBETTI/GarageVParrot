@@ -24,6 +24,7 @@ header {
 
 .slidbar {
     grid-column-start: span 1;
+   
 }
 .main-content{
     grid-column-start: span 2;
@@ -47,6 +48,7 @@ header {
 .main-content{
     padding: 8px;
 }
+
 /*Navbar*/
 .navbar-nav{
     
@@ -113,8 +115,8 @@ header {
 
 /* Section burger */
 .menu-accueil{
-   /* border: 1px solid red;*/
-    margin-top: 8%;
+   border: 1px solid red;
+
    text-align: center;
    backdrop-filter: blur(15px);
    background-color: rgba(182, 182, 182, 0.2);
@@ -151,29 +153,42 @@ h2{
 
 }
 }
-/*End of Nav*/
-/*cards-userCar accueil*/
+/*End of Nav
+/*cards-userCar accueil
 .container-card{
     height: 100%;
     width: 100%;
     
+ }*/
+ .group-car{
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-around;
+  gap: 8px;
+  
  }
 
- .card-title{
-    content: '';
-    display: block;
-    height: 3px;
-    width: 250px;   
-    margin:5px auto 5px; 
+ @media (min-width: 576px){
+  .card-group {
+      display: flex;
+      flex-flow: row wrap;
+  }
 }
 
-.card-title a{
+ .title-car{
+    content: '';
+    display: block;
+   /* margin:5px auto 5px; */
+    
+}
+
+.title-car a{
     color: #262526;
     font-size: 1.1rem;
     text-decoration: none;
    font-weight: bold;
 }
-.card-title a:hover{
+.title-car a:hover{
     color: #DF362D;
     font-size: 1.3rem;
     transition: 0.3s;
@@ -185,26 +200,29 @@ h2{
     font-size: 0.99rem;
 }
 small a{
-    padding: 4px;
+    padding: 0;
     position: relative;
-    bottom: 8px;
+    bottom: 0;
     font-size: 13px;
     text-decoration: none;
     color: #262526;
     font-weight: bold;
 }
-.card{
+.group-car{
     box-shadow: -2px -3px 17px -6px rgba(183,172,68,0.88);
     margin: 0;
     padding: 0;
     border-radius: 15px;
+  
 }
-.row{
+/*.row{
+    
     height: 100%;
-     display: flex;
-     justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
+    gap: 1;
     gap: 5px;
-}
+}*/
 .card-img-top{
     border-radius:15px 15px 0 0;
     width: 100%;
@@ -227,6 +245,7 @@ small a{
     }
     
 }
+
  .card-footer{
     display: flex;
     justify-content: center;
@@ -238,69 +257,11 @@ small a{
 }
 /*End:cards-userCar accueil*/
 
-/* Card-Service
-
-.container-Service{ 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 80px;
-    position: relative;
-    padding: 80px 40px;
-    margin-top: 10%;
-}
-.title-service{
-    
-    text-align: center;
-
-}
-.card{
-    position: relative;
-    height: 180px;
-    width: 350px;
-    background-color: #262526;
-    transition: 0.3s;
-    box-shadow: 0px 10px 46px -4px rgba(183,172,68,0.35);
-    border-radius: 20px;
-  
-}
-.card:hover{
-    height: 400px;
-}
-
-@media screen and (max-width: 360px){
-
-    .container{
-     gap:9rem ;
-      margin-top: 65%;
-     
-    }
-    .card{
-      margin: 0 auto;
-    }
-
-}
- .card #imgService{
-    border: 5px solid red;
-    position: absolute;
-    left: 50%;
-    top: -40% ;
-    width: 180px;
-    height: 150px;
-    transform: translate(-50%);
-    z-index: 10;
-    display: flex;
-    justify-content:center;
-    align-items:center;
-    overflow: hidden;
-    border-radius:20px ; 
-      
-}*/
 /*Paragraph service
   aside*/
 .details-story {
     margin-left: 8px;
+    background-color: #F2F2F2;
 }
 
 .title4{
@@ -315,6 +276,9 @@ small a{
     font-size: 0.9rem;
 
 }
+/*End: Paragraph service
+  aside */
+
 /* Footer-section*/
 .footer-section{
     display: flex;
@@ -397,14 +361,6 @@ small a{
 
    /*Contact*/
  
-   .btn  {
-    color: #fff;
-    border: #1da1f2;
-  }
-  .btn:hover {
-    background-color: #ff333f;
-  }
-   /*Contact*/
    .btn  {
     color: #fff;
     border: #1da1f2;
@@ -552,6 +508,7 @@ small a{
     color: #ff0000;
   }
   /* End :Footer-section*/
+
   /* Menu-service*/
   .menu-accueil{
      border: 1px solid red;
@@ -575,7 +532,6 @@ small a{
    
 }
 
-
 .card-title{
     color: white;
     font-size:1.5rem;
@@ -589,6 +545,7 @@ small a{
     }
 
 }
+/* End: menu service*/
 
 /* Carousel*/
 .slider-1{
