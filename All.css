@@ -153,32 +153,34 @@ h2{
 
 }
 }
-/*End of Nav
-/*cards-userCar accueil
+/*End of Nav/*
+
+cards-userCar accueil*/
 .container-card{
     height: 100%;
     width: 100%;
     
- }*/
- .group-car{
-  border: 1px solid red;
-  display: flex;
-  justify-content: space-around;
-  gap: 8px;
-  
  }
+.text-center{
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
 
- @media (min-width: 576px){
+
+
+ @media (min-width: 760px){
   .card-group {
-      display: flex;
-      flex-flow: row wrap;
+    display: flex;
+    flex-direction: row;
   }
 }
+
 
  .title-car{
     content: '';
     display: block;
-   /* margin:5px auto 5px; */
+    border: none;
+  
     
 }
 
@@ -192,15 +194,17 @@ h2{
     color: #DF362D;
     font-size: 1.3rem;
     transition: 0.3s;
+   
 }
-.card-price{
+.card-price p{
     position: relative;
-    top: 24px;
-    padding: 5PX;
+    top: 20px;
+    padding: 2PX;
     font-size: 0.99rem;
+   
 }
 small a{
-    padding: 0;
+    padding: 5px;
     position: relative;
     bottom: 0;
     font-size: 13px;
@@ -611,13 +615,20 @@ small a{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-    margin-top: 85%;
+  margin-top:80%
+    
 }
 @media screen and (min-width: 760px) {
+    .rating{
+    margin-top:80%;
+}
+  }
+  @media screen and (min-width: 320px) {
     .rating{
     margin-top:0;
 }
   }
+
 
 	/* Le groupe '.stars' positionne les étoiles
 		 les unes à côté des autres sans espacements. */
